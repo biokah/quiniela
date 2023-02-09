@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --main-accent-color: #016FB9;
+  --winner-accent-color: green;
+  --loser-accent-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root, body, html {
+  min-height: 100%;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header, footer {
+  min-height: 60px;
+}
+
+main {
+  @apply p-10;
+  min-height: calc(100% - 120px);
+}
+
+a.active {
+  @apply bg-neutral-200;
+}
+.medium__category {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.small__category {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.large-card__wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+}
+
+.c__medium-card {
+  height: 70px;
+}
+
+.c__medium-card img {
+  border-radius: 10px 0 0 10px;
+  width: 90px;
+}
+
+.c__medium-card div {
+  border-radius: 0 10px 10px 0;
+  width: calc(100% - 90px);
+}
+
+.c__medium-card p {
+  line-height: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.c__medium-card.selected div, .small-card.selected {
+  background-color: var(--main-accent-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.c__medium-card.winner div, .small-card.winner {
+  background-color: var(--winner-accent-color);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c__medium-card.loser div, .small-card.loser {
+  background-color: var(--loser-accent-color);
+  color: white;
+}
+
+.large-card.selected div {
+  background-color: var(--main-accent-color);
+  color: white;
+}
+
+.large-card.winner div {
+  background-color: var(--winner-accent-color);
+  color: white;
+}
+
+.large-card.loser div {
+  background-color: var(--loser-accent-color);
+  color: white;
+}
+
+.large-card.selected div::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.large-card.selected div::before {
+  border: 4px solid var(--main-accent-color);
+}
+
+.large-card.winner div::before {
+  border: 4px solid var(--winner-accent-color);
+}
+
+.large-card.loser div::before {
+  border: 4px solid var(--loser-accent-color);
+}
+
+.large-card img {
+  border-radius: 10px 10px 0 0;
+  height: 283px;
+}
+
+.large-card div {
+  border-radius: 0 0 10px 10px;
+}
+
+
+.small-card p {
+  line-height: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+
+.category__title svg {
+  width: 32px;
+  height: 32px;
 }
