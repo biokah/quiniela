@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const items = [{
-        name: "Mi quiniela",
+        name: "My Pool",
         url: "/"
     },
     {
         name: "Ranking",
         url: "/ranking"
     }, {
-        name: "Reglas",
+        name: "Rules",
         url: "/rules"
     }
 ] 

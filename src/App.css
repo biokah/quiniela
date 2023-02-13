@@ -13,9 +13,11 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html, body {
-  height: 100%;
+html, body, #root {
+  min-height: 100%;
 }
+
+
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -57,10 +59,12 @@ p, h1, h2, h3, h4, h5, h6 {
   --loser-accent-color: red;
 }
 
-#root, body, html {
-  min-height: 100%;
+body, html {
+
   font-family: 'Quicksand', sans-serif;
 }
+
+
 
 header, footer {
   min-height: 60px;
