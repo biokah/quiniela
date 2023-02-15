@@ -33,7 +33,14 @@ export default function Header() {
                 </ul>
                 <article className="ml-auto">{
                     isAuthenticated ?
-                        <button onClick={() => logout()}>Logout</button> :
+                        <span>
+                            <span style={{padding: 10}}>{user.name}</span>
+                            <button
+                                style={{padding: 10}}
+                                onClick={() => logout()}
+                                >Logout
+                            </button>
+                        </span> :
                         <button onClick={() => loginWithRedirect()}>Login</button>
                     }
                 </article>
