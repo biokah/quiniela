@@ -3,7 +3,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 export default function Header() {
-    const { isAuthenticated, user } = useAuth0();
+    const { isAuthenticated, user, logout, loginWithRedirect } = useAuth0();
     const items = [{
         name: "My Pool",
         url: "/"
@@ -15,7 +15,7 @@ export default function Header() {
         name: "Rules",
         url: "/rules"
     }
-] 
+]
     return (
         <header className="bg-white items-center flex px-8">
             <nav className="flex items-center w-full">
@@ -31,7 +31,12 @@ export default function Header() {
                         })
                     }
                 </ul>
-                <article className="ml-auto">{isAuthenticated ? user.name : "user"}</article>
+                <article className="ml-auto">{
+                    isAuthenticated ?
+                        <button onClick={() => logout()}>Logout</button> :
+                        <button onClick={() => loginWithRedirect()}>Login</button>
+                    }
+                </article>
             </nav>
         </header>
     )
