@@ -1,5 +1,7 @@
-// auth0
-import { withAuthenticationRequired } from '@auth0/auth0-react';
+// Authprovider
+
+import Auth0ProviderWithRedirectCallback from "./components/Auth0ProviderWithRedirectCallback"
+import ProtectedRoute from "./components/ProtectedRoute"
 
 // Layouts
 import RootLayout from "./layouts/RootLayout"
@@ -14,31 +16,38 @@ import Login from "./pages/Login";
 import './App.css';
 
 // Router library 
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
 
 
+const domain = process.env.REACT_APP_AUTH0_DOMAIN
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="ranking" element={<Ranking />} />
-      <Route path="login" element={<Login />} />
-      <Route path="rules" element={<Rules />} />
-    </Route>
-  )
-);
+
 
 function App() {
   
   return (
     <div className="w-full h-full">
-      <RouterProvider router={router} />
+    <BrowserRouter>
+      <Auth0ProviderWithRedirectCallback
+      domain={domain}
+      clientId={clientId}
+      authorizationParams={
+        {
+          redirect_uri: window.location.origin
+        }
+      }
+      >
+        <Routes>
+          <Route path="/" element={<ProtectedRoute component={RootLayout} />}>
+            <Route index element={<Home />} />
+            <Route path="ranking" element={<Ranking />} />
+            <Route path="rules" element={<Rules />} />
+          </Route>
+          <Route path="login" element={<Login />}></Route>
+        </Routes>
+      </Auth0ProviderWithRedirectCallback>
+    </BrowserRouter>
     </div>
   );
 }
