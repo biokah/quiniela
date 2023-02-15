@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 export default function Header() {
+    const { isAuthenticated, user } = useAuth0();
     const items = [{
         name: "My Pool",
         url: "/"
@@ -29,7 +31,7 @@ export default function Header() {
                         })
                     }
                 </ul>
-                <article className="ml-auto">User</article>
+                <article className="ml-auto">{isAuthenticated ? user.name : "user"}</article>
             </nav>
         </header>
     )

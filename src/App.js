@@ -1,3 +1,6 @@
+// auth0
+import { withAuthenticationRequired } from '@auth0/auth0-react';
+
 // Layouts
 import RootLayout from "./layouts/RootLayout"
 
@@ -34,7 +37,7 @@ const router = createBrowserRouter(
 function App() {
   
   return (
-    <div className="bg-neutral-200 w-full h-full">
+    <div className="w-full h-full">
       <RouterProvider router={router} />
     </div>
   );
