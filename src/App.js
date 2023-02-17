@@ -15,7 +15,7 @@ import Login from "./pages/Login";
 // Styles
 import './App.css';
 
-// Router library 
+// Router library
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
 
 
@@ -25,7 +25,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
 
 
 function App() {
-  
+
   return (
     <div className="w-full h-full">
     <BrowserRouter>
@@ -34,7 +34,9 @@ function App() {
       clientId={clientId}
       authorizationParams={
         {
-          redirect_uri: window.location.origin
+          redirect_uri: window.location.origin,
+          audience: `${process.env.REACT_APP_AUTH0_AUDIENCE}`,
+          scope: 'openid profile email'
         }
       }
       >
