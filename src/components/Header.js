@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuth0 } from '@auth0/auth0-react';
-import { useEffect } from "react";
+
 
 
 export default function Header() {
@@ -19,29 +19,7 @@ export default function Header() {
         }
     ]
 
-    useEffect(() => {
-        const getToken = async () => {
-            try {
-                const token = await getAccessTokenSilently();
-                console.log('Token:', token);
-                return token;
-            } catch (err) {
-                console.log('Hay un error:', err);
-            }
-        };
-        // getToken();
-        const callApi = async () => {
-            const token = await getToken();
-            const response = await fetch('http://localhost:3000/events/public', {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
-            });
-            const responseData = await response.json();
-            console.log('la response', responseData);
-        }
-        callApi();
-    }, [])
+    
     return (
         <header className="bg-white items-center flex px-8">
             <nav className="flex items-center w-full">
