@@ -190,3 +190,15 @@ a.active {
 .login-form {
   transform: translate(-50%, -50%)
 }
+
+.rankings {
+  width: min(800px, 100%)
+}
+
+.mobile-nav {
+  transform: translate(56px, 33px);
+}
+
+.mobile-nav a.active {
+  @apply bg-white font-bold;
+}
