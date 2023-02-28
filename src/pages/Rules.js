@@ -1,11 +1,13 @@
+import { FaMedal } from "react-icons/fa";
+
 export default function Rules () {
     return (
         <div>
             <p className="whitespace-pre-line break-words text-xl font-bold">
-                Welcome to the Wizeline Oscars :wize::oscars: office pool! :yay:
+                Welcome to the Wizeline Oscars office pool!
             </p>
             <p className="my-2">
-                This year, Wizeliners will be able to predict the Oscar winners, and win a special Wizepoints :wizepoints: prize for showing their movie savvy!
+                This year, Wizeliners will be able to predict the Oscar winners, and win a special Wizepoints prize for showing their movie savvy!
             </p>
             <p className="my-2">
                 Each person must choose their predicted winner from each of the 23 Oscar categories. You can change your selection until the deadline on Oscar Sunday March 12th 2023 at 12 pm CST. After that, the system will lock your predictions and you won't be able to modify them. Each category equals 1 point, so the maximum amount that anyone can get is 23 points.
@@ -17,14 +19,14 @@ export default function Rules () {
                 
             
             <ul className="m-10">
-                <li className="list-disc my-4">
-                    1st place :first_place_medal:: 100 Wizepoints :wizepoints:
+                <li className="list-none my-4 flex items-center gap-2">
+                    <FaMedal /><span> 1st place: 100 Wizepoints </span>
                 </li>
-                <li className="list-disc my-4">
-                    2nd place :second_place_medal:: 50 Wizepoints :wizepoints:
+                <li className="list-none my-4 flex items-center gap-2">
+                    <FaMedal /><span clas> 2nd place: 50 Wizepoints</span>
                 </li>
-                <li className="list-disc my-4">
-                    3rd place :third_place_medal:: 30 Wizepoints :wizepoints:
+                <li className="list-none my-4 flex items-center gap-2">
+                    <FaMedal /><span> 3rd place: 30 Wizepoints </span>
                 </li>
             </ul>
             <p className="whitespace-pre-line break-words">
