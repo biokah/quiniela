@@ -196,9 +196,17 @@ a.active {
 }
 
 .mobile-nav {
-  transform: translate(56px, 33px);
+  transform: translate(85px, 33px);
 }
 
 .mobile-nav a.active {
   @apply bg-white font-bold;
+}
+
+.logo {
+  width: 100px;
+}
+
+.mobile-nav svg {
+  transform: rotate(180deg);
 }

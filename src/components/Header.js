@@ -28,9 +28,8 @@ export default function Header() {
     return (
         <header className="bg-white items-center flex px-2 md:px-8">
             <nav className="flex items-center w-full relative">
-                <a href="/" className="mr-8">
-                    <img src="./../logo.png" alt="" />
-                    LOGO
+                <a href="/" className="mr-2 md:mr-8">
+                    <img className="logo" src={require("./../logo.png")} alt="" />
                 </a>
                 <ul className="md:flex h-full items-center hidden">
                     {
@@ -55,9 +54,9 @@ export default function Header() {
                         {
                         items.map((item, index) => {
                             return (
-                                <li key={item.name} className="list-none w-full flex">
+                                <li key={item.name} className="list-none w-full flex items-center justify-center" onClick={toggleNav}>
                                     <NavLink to={item.url} className="px-3 py-1 w-full block">{item.name}</NavLink>
-                                    {index === 0 ? <button onClick={toggleNav}><FiChevronDown /></button> :null }
+                                    {index === 0 ? <FiChevronDown /> : null }
                                 </li>
                             )
                         })
