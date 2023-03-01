@@ -172,6 +172,14 @@ a.active {
   border-radius: 0 0 10px 10px;
 }
 
+.contender {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contender:hover {
+  background-color: #bebebe;
+}
 
 .small-card p {
   line-height: 14px;
