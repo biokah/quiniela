@@ -5,8 +5,8 @@ export default function MediumCard ({category, handleClick, accent}) {
             ${accent}`}
             onClick={() => handleClick(category._id)}
             >
-                <img src={category.image} alt="" className="object-cover object-center mr-2" />
-                <div className=" flex flex-col justify-center">
+                <img src={category.image} alt="" className="object-cover object-center" />
+                <div className=" flex flex-col justify-center pl-2">
                     <p className="font-semibold mb-2">{category.name}</p>
                     {category.description ?  <p>{category.description}</p> : null}
                 </div>
