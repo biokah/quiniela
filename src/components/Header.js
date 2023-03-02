@@ -68,7 +68,7 @@ export default function Header() {
                 <article className="ml-auto">{
                     isAuthenticated ?
                         <span>
-                            <span style={{padding: 10}}>{user.name}</span>
+                            <span style={{padding: 10}}>{user.name.split(' ')[0]}</span>
                             <button
                                 style={{padding: 10}}
                                 onClick={() => logout()}
