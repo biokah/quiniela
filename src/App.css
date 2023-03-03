@@ -218,3 +218,7 @@ a.active {
 .mobile-nav svg {
   transform: rotate(180deg);
 }
+
+.center-element {
+  transform: translate(-50%, -40%)
+}
