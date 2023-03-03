@@ -45,6 +45,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProtectedRoute component={RootLayout} />}>
             <Route index element={<Home />} />
+            <Route path="admin" element={<Admin />} />
             <Route path="ranking" element={<Ranking />} />
             <Route path="rules" element={<Rules />} />
             <Route path="admin" element={<Admin />} />
