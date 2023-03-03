@@ -1,0 +1,4 @@
+const DEFAULT_EVENT = '63fce701ea11106af1d861f6';
+export {
+  DEFAULT_EVENT
+};
