@@ -11,6 +11,8 @@ import Home from "./pages/Home"
 import Ranking from "./pages/Ranking"
 import Rules from "./pages/Rules"
 import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Error from "./pages/Error"
 
 // Styles
 import './App.css';
@@ -45,7 +47,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="ranking" element={<Ranking />} />
             <Route path="rules" element={<Rules />} />
+            <Route path="admin" element={<Admin />} />
           </Route>
+          <Route path="*" element={<Error />} />
           <Route path="login" element={<Login />}></Route>
         </Routes>
       </Auth0ProviderWithRedirectCallback>
