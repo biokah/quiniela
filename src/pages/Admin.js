@@ -9,6 +9,7 @@ export default function Admin() {
   const { event, setMatchWinner, error } = useEventAdmin({
     eventId: DEFAULT_EVENT
   });
+  console.log(event);
   const navigate = useNavigate();
 
   const mainCategories = ["Best Picture"];
@@ -40,7 +41,8 @@ export default function Admin() {
   ];
 
   if (error) {
-    navigate('/');
+    console.log(error)
+    // navigate('/');
   }
   const mainMatches = event.matches
     .filter((match) => mainCategories.indexOf(match.title) > -1)
@@ -54,7 +56,7 @@ export default function Admin() {
           key={match._id}
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
-          winner={match.winner}
+          winner={match.winner._id}
         />
       );
     });
@@ -70,7 +72,7 @@ export default function Admin() {
           key={match._id}
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
-          winner={match.winner}
+          winner={match.winner ? match.winner._id : null}
         />
       );
     });
@@ -86,7 +88,7 @@ export default function Admin() {
           key={match._id}
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
-          winner={match.winner}
+          winner={match.winner ? match.winner._id : null}
         />
       );
     });

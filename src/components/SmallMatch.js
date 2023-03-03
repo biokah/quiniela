@@ -2,7 +2,7 @@ import setAccent from "../utils/setAccent";
 import CategoryTitle from "./CategoryTitle"
 import SmallCard from "./SmallCard";
 
-const SmallMatch = ({title, contenders, status, winner, onSelectWinner}) => {
+const SmallMatch = ({title, contenders, status = 'pending', winner, onSelectWinner}) => {
   const matchContenders = contenders.map((contender) => {
     const accent = setAccent({status, winner, contender})
     return <SmallCard

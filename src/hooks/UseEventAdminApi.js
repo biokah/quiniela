@@ -32,16 +32,21 @@ export default function useAdminMatchesApi({ eventId }) {
   }, []);
 
   const updateMatchWinner  = (matchId, newWinner) => {
+    console.log('Event: ', event)
     const updatedMatches  = event.matches.map((match) => {
       const isMatch = match._id == matchId;
       return isMatch ? {...match, winner: newWinner} : match;
     })
-    setEvent({...event, matches: updatedMatches});
+    const newEvent = {...event}
+    newEvent.matches = updatedMatches;
+    setEvent(newEvent);
+    console.log('Updated matches :',updatedMatches);
+    console.log('Event after: ', event)
   }
 
   const setMatchWinner = async (matchId, contenderId) => {
     try {
-      const url = `${API_BASE_URL}/matches/${matchId}`;
+      const url = `${API_BASE_URL}/matches/${matchId}/result`;
       console.log({url, matchId, contenderId});
       const token = await getAccessTokenSilently();
       console.log(token);

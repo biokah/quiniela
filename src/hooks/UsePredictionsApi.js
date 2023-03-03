@@ -10,6 +10,7 @@ export default function usePredictionsApi({eventId}) {
     useEffect(()=>{
       const callApi = async () => {
         const token = await getAccessTokenSilently();
+        console.log(token);
         const response = await fetch(
           url,
           {
