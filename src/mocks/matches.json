@@ -1,0 +1,577 @@
+
+[
+  {
+    "title": "Best Picture",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front",
+        "image": "https://a.ltrbxd.com/resized/film-poster/1/6/5/3/0/16530-all-quiet-on-the-western-front-0-500-0-750-crop.jpg?v=bff4d496a1"
+      },
+      {
+        "name": "Avatar: The Way of Water",
+        "image": "https://a.ltrbxd.com/resized/film-poster/6/3/0/5/8/63058-avatar-the-way-of-water-0-500-0-750-crop.jpg?v=37a1014065"
+      },
+      {
+        "name": "The Banshees of Inisherin",
+        "image": "https://a.ltrbxd.com/resized/film-poster/5/9/8/8/8/2/598882-the-banshees-of-inisherin-0-500-0-750-crop.jpg?v=933f9af6e7"
+      },
+      {
+        "name": "Elvis",
+        "image": "https://a.ltrbxd.com/resized/film-poster/5/4/2/0/3/2/542032-elvis-0-500-0-750-crop.jpg?v=c8e56b86bc"
+      },
+      {
+        "name": "Everything Everywhere All at Once",
+        "image": "https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-500-0-750-crop.jpg?v=281f1a041e"
+      },
+      {
+        "name": "The Fabelmans",
+        "image": "https://a.ltrbxd.com/resized/film-poster/7/2/1/2/8/8/721288-the-fabelmans-0-500-0-750-crop.jpg?v=ae93837ec1"
+      },
+      {
+        "name": "Tár",
+        "image": "https://a.ltrbxd.com/resized/film-poster/7/3/4/0/9/6/734096-tar-0-1000-0-1500-crop.jpg?v=e6d8348cff"
+      },
+      {
+        "name": "Top Gun: Maverick",
+        "image": "https://a.ltrbxd.com/resized/film-poster/2/9/3/4/6/5/293465-top-gun-maverick-0-1000-0-1500-crop.jpg?v=9f8af0f61b"
+      },
+      {
+        "name": "Triangle of Sadness",
+        "image": "https://a.ltrbxd.com/resized/film-poster/4/2/7/9/7/0/427970-triangle-of-sadness-0-1000-0-1500-crop.jpg?v=a9210ebfee"
+      },
+      {
+        "name": "Women Talking",
+        "image": "https://a.ltrbxd.com/resized/film-poster/6/9/6/3/1/0/696310-women-talking-0-500-0-750-crop.jpg?v=8c9d924166"
+      }
+    ]
+
+  },
+  {
+    "title": "Directing",
+    "contenders": [
+      {
+        "name": "Martin McDonagh",
+        "description": "The Banshees of Inisherin",
+        "image": "https://m.media-amazon.com/images/M/MV5BMDViNjgxMzYtYzU2Yy00MTQzLWJlOTktNjVhNmRlNmNiODI3XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX675_.jpg"
+      },
+      {
+        "name": "Daniel Kwan and Daniel Scheinert",
+        "description": "Everything Everywhere All at Once",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDdiNGVkMjctNTQ4Yy00YzA4LWIyMWUtNmM1ZTk4NTJiNzNiXkEyXkFqcGdeQXVyMjk3NTUyOTc@._V1_FMjpg_UX800_.jpg"
+      },
+      {
+        "name": "Steven Spielberg",
+        "description": "The Fabelmans",
+        "image": "https://image.tmdb.org/t/p/w342/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
+      },
+      {
+        "name": "Todd Field",
+        "description": "Tár",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTI1ODI1MzI3Ml5BMl5BanBnXkFyZXN1bWU@._V1_FMjpg_UX466_.jpg"
+      },
+      {
+        "name": "Ruben Östlund",
+        "description": "Triangle of Sadness",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTQxNTI2MTY3OV5BMl5BanBnXkFtZTgwMDM5OTA5MjE@._V1_FMjpg_UY720_.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Actor in a Leading Role",
+    "contenders": [
+      {
+        "name": "Austin Butler",
+        "description": "Elvis",
+        "image": "https://image.tmdb.org/t/p/w342/zyizc36OayhIn3STXR8HXP0nnVm.jpg"
+      },
+      {
+        "name": "Colin Farrell",
+        "description": "The Banshees of Inisherin",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTg4NzM5NDk0MV5BMl5BanBnXkFtZTcwNzAzMTUxNw@@._V1_FMjpg_UY720_.jpg"
+      },
+      {
+        "name": "Brendan Fraser",
+        "description": "The Whale",
+        "image": "https://image.tmdb.org/t/p/w342/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+      },
+      {
+        "name": "Paul Mescal",
+        "description": "After Sun",
+        "image": "https://image.tmdb.org/t/p/w342/pjCmH4YVRYXd4zpErxpdwDgaK2L.jpg"
+      },
+      {
+        "name": "Bill Nighy",
+        "description": "Living",
+        "image": "https://image.tmdb.org/t/p/w342/acbigDOU1L1vMWAL3Wf0r8h8qLA.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Actress in a Leading Role",
+    "contenders": [
+      {
+        "name": "Cate Blanchett",
+        "description": "Tár",
+        "image": "https://image.tmdb.org/t/p/w342/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg"
+      },
+      {
+        "name": "Ana de Armas",
+        "description": "Blonde",
+        "image": "https://image.tmdb.org/t/p/w342/vkoSSVrGxFYvtr2uUdz99ENXF1v.jpg"
+      },
+      {
+        "name": "Andrea Riseborough",
+        "description": "To Leslie",
+        "image": "https://image.tmdb.org/t/p/w342/dQzAXj6R8cTRqTwGzxUgegXbV13.jpg"
+      },
+      {
+        "name": "Michelle Williams",
+        "description": "The Fabelmans",
+        "image": "https://image.tmdb.org/t/p/w342/b6mHfqOsf7zS7HzQL6dOfzbdmy7.jpg"
+      },
+      {
+        "name": "Michelle Yeoh",
+        "description": "Everything Everywhere All At Once",
+        "image": "https://people.com/thmb/DwqNerxCdJoT1We67ilio4kTFQE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/michelle-yeoh-main-5e2f221b8a194bf994735f65bf0b5699.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Actor in a Supporting Role",
+    "contenders": [
+      {
+        "name": "Brendan Gleeson",
+        "description": "The Banshees of Inisherin",
+        "image": "https://image.tmdb.org/t/p/w342/379TXtBPRrkBDrEBWPQ5v3up7kT.jpg"
+      },
+      {
+        "name": "Brian Tyree Henry",
+        "description": "Causeway",
+        "image": "https://image.tmdb.org/t/p/w342/1UgDnFt3OteCJQPiUelWzIR5bvT.jpg"
+      },
+      {
+        "name": "Judd Hirsch",
+        "description": "The Fabelmans",
+        "image": "https://image.tmdb.org/t/p/w342/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg"
+      },
+      {
+        "name": "Barry Keoghan",
+        "description": "The Banshees of Inisherin",
+        "image": "https://image.tmdb.org/t/p/w342/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+      },
+      {
+        "name": "Ke Huy Quan",
+        "description": "Everything Everywhere All at Once",
+        "image": "https://image.tmdb.org/t/p/w342/5PfYVcNLs1gGKIo0qwJrvyc2UOZ.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Actress in a Supporting Role",
+    "contenders": [
+      {
+        "name": "Angela Bassett",
+        "description": "Black Panther: Wakanda Forever",
+        "image": "https://image.tmdb.org/t/p/w342/7Oz53NKdglRzAzI2MKjM3eQXwn.jpg"
+      },
+      {
+        "name": "Hong Chau",
+        "mainText": "string",
+        "description": "The Whale",
+        "image": "https://image.tmdb.org/t/p/w342/3LIsdizzTUk9Doi0Mwwc1ROfSIy.jpg"
+      },
+      {
+        "name": "Kerry Condon",
+        "description": "The Banshees of Inisherin",
+        "image": "https://image.tmdb.org/t/p/w342/8l5zehb9sc9cgRCLD713rf5Xmz3.jpg"
+      },
+      {
+        "name": "Jamie Lee Curtis",
+        "description": "Everything Everywhere All at Once",
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jamie-lee-curtis-attends-the-opening-night-premiere-of-news-photo-1647083271.jpg"
+      },
+      {
+        "name": "Stephanie Hsu",
+        "description": "Everything Everywhere All at Once",
+        "image": "https://image.tmdb.org/t/p/w342/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Animated Feature Film",
+    "contenders": [
+      {
+        "name": "Guillermo del Toro's Pinocchio",
+        "description": "Guillermo del Toro, Mark Gustafson, Gary Ungar and Alex Bulkley",
+        "image": "https://d.newsweek.com/en/full/2086749/guillermo-del-toro-pinocchio.png?w=1600&h=1600&q=88&f=96bd3c574df495b4e07335c5497ff81d"
+      },
+      {
+        "name": "Marcel the Shell with Shoes On",
+        "description": "Dean Fleischer Camp, Elisabeth Holm, Andrew Goldman, Caroline Kaplan and Paul Mezey",
+        "image": "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/227554/fmc_mc_MarcelTheShell.jpg"
+      },
+      {
+        "name": "Puss in Boots: The Last Wish",
+        "description": "Joel Crawford and Mark Swift",
+        "image": "https://resizing.flixster.com/iRpxC8BgEWFzv6ol51-XBz-PJek=/740x380/v2/https://statcdn.fandango.com/MPX/image/NBCU_Fandango/798/27/thumb_2ABA56A4-AA19-4439-BDAE-87BDAC794A69.jpg"
+      },
+      {
+        "name": "The Sea Beast",
+        "description": "Chris Williams and Jed Schlanger",
+        "image": "https://img10.tokyvideo.com/avatars/2/25e7ccc1e21a6b9b8e3af42a7aaf412aa17a343653b8a81b0fceb079edc391ba.jpg"
+      },
+      {
+        "name": "Turning Red",
+        "description": "Domee Shi and Lindsey Collins",
+        "image": "https://media.vogue.mx/photos/6230c22c4dca695e5156c684/2:3/w_2560%2Cc_limit/red-pelicula-de-disney.jpg"
+      }
+    ]
+
+  },
+  {
+    "title": "Cinematography",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "BARDO, False Chronicle of a Handful of Truths"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "Empire of Light"
+      },
+      {
+        "name": "Tár"
+      }
+    ]
+
+  },
+  {
+    "title": "Costume Design",
+    "contenders": [
+      {
+        "name": "Babylon"
+      },
+      {
+        "name": "Black Panther: Wakanda Forever"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "Everything Everywhere All at Once"
+      },
+      {
+        "name": "Mrs. Harris Goes to Paris"
+      }
+    ]
+
+  },
+  {
+    "title": "Documentary Feature Film",
+    "contenders": [
+      {
+        "name": "All That Breathes"
+      },
+      {
+        "name": "All the Beauty and the Bloodshed"
+      },
+      {
+        "name": "Fire of Love"
+      },
+      {
+        "name": "A House Made of Splinters"
+      },
+      {
+        "name": "Navalny"
+      }
+    ]
+
+  },
+  {
+    "title": "Documentary Short Film",
+    "contenders": [
+      {
+        "name": "The Elephant Whisperers"
+      },
+      {
+        "name": "Haulout"
+      },
+      {
+        "name": "How Do You Measure a Year?"
+      },
+      {
+        "name": "The Martha Mitchell Effect"
+      },
+      {
+        "name": "Stranger at the Gate"
+      }
+    ]
+
+  },
+  {
+    "title": "Film Editing",
+    "contenders": [
+      {
+        "name": "The Banshees of Inisherin"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "Everything Everywhere All at Once"
+      },
+      {
+        "name": "Tár"
+      },
+      {
+        "name": "Top Gun: Maverick"
+      }
+    ]
+
+  },
+  {
+    "title": "International Feature Film",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "Argentina, 1985"
+      },
+      {
+        "name": "Close"
+      },
+      {
+        "name": "Eo"
+      },
+      {
+        "name": "The Quiet Girl"
+      }
+    ]
+
+  },
+  {
+    "title": "Makeup & Hairstyling",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "The Batman"
+      },
+      {
+        "name": "Black Panther: Wakanda Forever"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "The Whale"
+      }
+    ]
+
+  },
+  {
+    "title": "Music: Original Score",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "Babylon"
+      },
+      {
+        "name": "The Banshees of Inisherin"
+      },
+      {
+        "name": "Everything Everywhere All at Once"
+      },
+      {
+        "name": "The Fabelmans"
+      }
+    ]
+
+  },
+  {
+    "title": "Music: Original Song",
+    "contenders": [
+      {
+        "name": "Applause",
+        "description": "Tell It like a Woman"
+      },
+      {
+        "name": "Hold my Hand",
+        "description": "Top Gun: Maverick"
+      },
+      {
+        "name": "Lift Me Up",
+        "description": "Black Panther: Wakanda Forever"
+      },
+      {
+        "name": "Naatu Naatu",
+        "description": "RRR"
+      },
+      {
+        "name": "This is a Life",
+        "description": "Everything Everywhere All at Once"
+      }
+    ]
+
+  },
+  {
+    "title": "Production Design",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "Avatar: The Way of Water"
+      },
+      {
+        "name": "Babylon"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "The Fabelmans"
+      }
+    ]
+
+  },
+  {
+    "title": "Short Film: Animated",
+    "contenders": [
+      {
+        "name": "The Boy, the Mole, the Fox and the Horse"
+      },
+      {
+        "name": "The Flying Sailor"
+      },
+      {
+        "name": "Ice Merchants"
+      },
+      {
+        "name": "My Year of Dicks"
+      },
+      {
+        "name": "An Ostrich Told Me the World Is Fake and I Think I Believe It"
+      }
+    ]
+
+  },
+  {
+    "title": "Short Film: Live Action",
+    "contenders": [
+      {
+        "name": "An Irish Goodbye"
+      },
+      {
+        "name": "Ivalu"
+      },
+      {
+        "name": "Le Pupille"
+      },
+      {
+        "name": "Night Ride"
+      },
+      {
+        "name": "The Red Suitcase"
+      }
+    ]
+
+  },
+  {
+    "title": "Sound",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "Avatar: The Way of Water"
+      },
+      {
+        "name": "The Batman"
+      },
+      {
+        "name": "Elvis"
+      },
+      {
+        "name": "Top Gun: Maverick"
+      }
+    ]
+
+  },
+  {
+    "title": "Visual Effects",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "The Batman"
+      },
+      {
+        "name": "Avatar: The Way of Water"
+      },
+      {
+        "name": "Black Panther: Wakanda Forefer"
+      },
+      {
+        "name": "Top Gun: Maverick"
+      }
+    ]
+
+  },
+  {
+    "title": "Writing: Adapted Screenplay",
+    "contenders": [
+      {
+        "name": "All Quiet on the Western Front"
+      },
+      {
+        "name": "Glass Onion: A Knives Out Mystery"
+      },
+      {
+        "name": "Living"
+      },
+      {
+        "name": "Top Gun: Maverick"
+      },
+      {
+        "name": "Women Talking"
+      }
+    ]
+
+  },
+  {
+    "title": "Writing: Original Screenplay",
+    "contenders": [
+      {
+        "name": "The Banshees of Inisherin"
+      },
+      {
+        "name": "Everything Everywhere All at Once"
+      },
+      {
+        "name": "The Fabelmans"
+      },
+      {
+        "name": "Tár"
+      },
+      {
+        "name": "Triangle of Sadness"
+      }
+    ]
+
+  }
+]

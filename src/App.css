@@ -218,3 +218,19 @@ a.active {
 .mobile-nav svg {
   transform: rotate(180deg);
 }
+
+.center-element {
+  transform: translate(-50%, -40%)
+}
+
+.cancelButton {
+  padding: .2rem .5rem;
+  background-color: rgb(241, 75, 75);
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.cancelButton:hover {
+  background-color: darkred;
+}
