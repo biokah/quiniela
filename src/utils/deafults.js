@@ -1,4 +1,4 @@
-const DEFAULT_EVENT = '63fce701ea11106af1d861f6';
+const DEFAULT_EVENT = '6402e95bc4a46bdcf5e4ce97';
 export {
   DEFAULT_EVENT
 };

@@ -6,8 +6,24 @@ export default function usePredictionsApi({eventId}) {
     const [predictions, setPredictions] = useState([]);
     const { getAccessTokenSilently } = useAuth0();
     const url = `${process.env.REACT_APP_API_BASE_URL}/predictions/${eventId}`;
+    const subscribeUrl = `${process.env.REACT_APP_API_BASE_URL}/events/${eventId}/subscribe`;
 
     useEffect(()=>{
+      const subscribeUser = async () => {
+        const token = await getAccessTokenSilently();
+        console.log(token);
+        const response = await fetch(
+          subscribeUrl,
+          {
+            method: 'POST',
+            headers: {
+              Authorization: `Bearer ${token}`,
+            }
+          }
+        );
+        const responseData = await response.json();
+        console.log('Subscription: ', responseData);
+      };
       const callApi = async () => {
         const token = await getAccessTokenSilently();
         console.log(token);
@@ -22,7 +38,10 @@ export default function usePredictionsApi({eventId}) {
         const responseData = await response.json();
         setPredictions(responseData);
       };
+      subscribeUser();
+      setTimeout(() => {
         callApi();
+      }, 500);
     }, [url]);
 
     const updatePredictionWinner  = (predictionId, newWinner) => {

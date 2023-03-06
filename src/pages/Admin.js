@@ -1,4 +1,4 @@
-import useEventAdmin from "../hooks/UseEventAdminApi";
+import useAdminMatchesApi from "../hooks/UseAdminMatchesApi";
 import MainMatch from "../components/MainMatch";
 import MediumMatch from "../components/MediumMatch";
 import SmallMatch from "../components/SmallMatch";
@@ -6,10 +6,10 @@ import { useNavigate } from "react-router-dom";
 import { DEFAULT_EVENT } from "../utils/deafults";
 
 export default function Admin() {
-  const { event, setMatchWinner, error } = useEventAdmin({
+  const { matches, setMatchWinner, cancelResult, error } = useAdminMatchesApi({
     eventId: DEFAULT_EVENT
   });
-  console.log(event);
+  console.log(matches);
   const navigate = useNavigate();
 
   const mainCategories = ["Best Picture"];
@@ -41,14 +41,17 @@ export default function Admin() {
   ];
 
   if (error) {
-    console.log(error)
-    // navigate('/');
+    console.log(error);
+    navigate("/");
   }
-  const mainMatches = event.matches
+  const mainMatches = matches
     .filter((match) => mainCategories.indexOf(match.title) > -1)
     .map((match) => {
       const selectWinnerHandler = (contenderId) =>
         setMatchWinner(match._id, contenderId);
+        const cancelResultHandler = () => {
+          cancelResult(match._id);
+        };
       return (
         <MainMatch
           title={match.title}
@@ -56,15 +59,19 @@ export default function Admin() {
           key={match._id}
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
-          winner={match.winner._id}
+          winner={match.winner?._id}
+          onCancel={cancelResultHandler}
         />
       );
     });
-  const mediumMatches = event.matches
+  const mediumMatches = matches
     .filter((match) => mediumCategories.indexOf(match.title) > -1)
     .map((match) => {
       const selectWinnerHandler = (contenderId) =>
         setMatchWinner(match._id, contenderId);
+      const cancelResultHandler = () => {
+        cancelResult(match._id);
+      }
       return (
         <MediumMatch
           title={match.title}
@@ -72,15 +79,20 @@ export default function Admin() {
           key={match._id}
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
-          winner={match.winner ? match.winner._id : null}
+          winner={match.winner?._id}
+          onCancel={cancelResultHandler}
         />
       );
     });
-  const smallMatches = event.matches
+  const smallMatches = matches
     .filter((match) => smallCategories.indexOf(match.title) > -1)
     .map((match) => {
-      const selectWinnerHandler = (contenderId) =>
-        setMatchWinner(match._id, contenderId);
+      const selectWinnerHandler = async (contenderId) => {
+        await setMatchWinner(match._id, contenderId);
+      }
+      const cancelResultHandler = async () => {
+        await cancelResult(match._id);
+      };
       return (
         <SmallMatch
           title={match.title}
@@ -89,13 +101,14 @@ export default function Admin() {
           onSelectWinner={selectWinnerHandler}
           // status={match.status}
           winner={match.winner ? match.winner._id : null}
+          onCancel={cancelResultHandler}
         />
       );
     });
   return (
     <>
       {/* Big categories */}
-      {event && event.matches.length ? (
+      {matches.length ? (
         <div className="container m-auto">
           {mainMatches}
 

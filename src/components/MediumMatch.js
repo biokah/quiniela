@@ -7,8 +7,16 @@ const MediumMatch = ({
   contenders,
   winner,
   onSelectWinner,
-  status = 'pending'
+  status = 'pending',
+  onCancel
 }) => {
+  const cancelButton = onCancel && winner ? (
+    <button className="cancelButton" onClick={onCancel} title="Revoke result">
+      X
+    </button>
+  ) : (
+    ""
+  );
   const matchContenders = contenders.map((contender) => {
     const accent = setAccent({ status, winner, contender });
     return (
@@ -23,7 +31,7 @@ const MediumMatch = ({
 
   return (
     <div>
-      <CategoryTitle title={title} size="large" />
+      <CategoryTitle title={title} cancelButton={cancelButton} size="large" />
       <div className="medium-card__wrapper">{matchContenders}</div>
     </div>
   );
